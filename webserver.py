@@ -3,6 +3,10 @@ from quickstart import create_event
 
 app = Flask(__name__)
 
+@app.route('/welcome')
+def welcome():
+    return app.send_static_file('welcome.html')
+
 @app.route('/send-invite')
 def sendInvite():
     create_event()
