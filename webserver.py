@@ -26,9 +26,9 @@ def notification():
 @app.route('/send-invite')
 def sendInvite():
     create_event()
-    return redirect(url_for('success-1'))
+    return redirect(url_for('success1'))
 
-@app.route('/success-1')
+@app.route('/success1')
 def success1():
     return 'this works!'
 
