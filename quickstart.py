@@ -74,15 +74,15 @@ def create_event():
     http = credentials.authorize(httplib2.Http())
     service = discovery.build('calendar', 'v3', http=http)
     event = {
-      'summary': 'Drinks with Susie',
-      'location': 'London Business School, 26 Sussex Pl, Marylebone, London',
-      'description': 'Last meaningful interaction: Lunch on 15 November 2017',
+      'summary': 'Dinner with Nick',
+      'location': 'Disrepute, 4 Kingly Court, Soho, London W1B 5PW',
+      'description': 'Last meaningful interaction: Lunch on 4 January 2018',
       'start': {
         'dateTime': '2018-02-11T18:00:00',
         'timeZone': 'Europe/London',
       },
       'end': {
-        'dateTime': '2018-02-11T19:30:00',
+        'dateTime': '2018-02-11T20:00:00',
         'timeZone': 'Europe/London',
       },
       'attendees': [

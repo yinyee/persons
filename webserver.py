@@ -11,9 +11,9 @@ def welcome():
 def setup():
     return app.send_static_file('setup.html')
 
-@app.route('/success')
-def success():
-    return app.send_static_file('success.html')
+@app.route('/thankyou')
+def thankyou():
+    return app.send_static_file('thankyou.html')
 
 @app.route('/home')
 def home():
@@ -26,10 +26,10 @@ def notification():
 @app.route('/send-invite')
 def sendInvite():
     create_event()
-    return redirect(url_for('success1'))
+    return redirect(url_for('success'))
 
-@app.route('/success1')
-def success1():
-    return 'this works!'
+@app.route('/success')
+def success():
+    return app.send_static_file('success.html')
 
 app.run(host="0.0.0.0")
