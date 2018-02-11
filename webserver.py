@@ -30,6 +30,14 @@ def sendInvite():
 
 @app.route('/success')
 def success():
-    return app.send_static_file('success.html')
+    return app.send_static_file('home.html')
+
+@app.route('/alert')
+def alert():
+    return app.send_static_file('alert.html')
+
+@app.route('/accept')
+def accept():
+    return app.send_static_file('accept.html')
 
 app.run(host="0.0.0.0")
