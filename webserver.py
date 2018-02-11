@@ -29,7 +29,7 @@ def sendInvite():
     return redirect(url_for('success-1'))
 
 @app.route('/success-1')
-def success-1():
+def success1():
     return 'this works!'
 
 app.run(host="0.0.0.0")
