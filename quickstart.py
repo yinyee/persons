@@ -86,7 +86,7 @@ def create_event():
         'timeZone': 'Europe/London',
       },
       'attendees': [
-        {'email': 'michellewiles12@example.com'},
+        {'email': 'jeffskinner.persons@gmail.com'},
       ],
     }
     event = service.events().insert(calendarId='primary', body=event).execute()
